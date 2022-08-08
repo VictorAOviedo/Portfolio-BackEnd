@@ -29,6 +29,22 @@ public class Persona implements Serializable {
     @Size(min = 1, max = 50, message = "no cumple con la longitud")
     private String img;
     
+    @NotNull
+    private String titulo;
+    
+    @NotNull
+    private String descripcion;
+
+    public Persona() {
+    }
+
+    public Persona(String nombre, String apellido, String img, String titulo, String descripcion) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.img = img;
+        this.titulo = titulo;
+        this.descripcion = descripcion;
+    }
     
     
 }
