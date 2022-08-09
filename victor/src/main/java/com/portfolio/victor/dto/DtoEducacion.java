@@ -1,6 +1,5 @@
 package com.portfolio.victor.dto;
 
-import java.util.Date;
 import javax.validation.constraints.NotBlank;
 import lombok.Getter;
 import lombok.Setter;

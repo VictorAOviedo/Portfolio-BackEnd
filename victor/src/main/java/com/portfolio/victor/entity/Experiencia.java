@@ -1,4 +1,3 @@
-
 package com.portfolio.victor.entity;
 
 import javax.persistence.Entity;
@@ -16,12 +15,14 @@ public class Experiencia {
     private int id;
     private String nombreExp;
     private String descripcionExp;
+    private String fechaExp;
 
     public Experiencia() {
     }
 
-    public Experiencia(String nombreExp, String descripcionExp) {
+    public Experiencia(String nombreExp, String descripcionExp, String fechaExp) {
         this.nombreExp = nombreExp;
         this.descripcionExp = descripcionExp;
+        this.fechaExp = fechaExp;
     }   
 }
