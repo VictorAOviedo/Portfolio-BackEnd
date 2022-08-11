@@ -36,8 +36,8 @@ public class EducacionController {
     public ResponseEntity<Educacion> getById(@PathVariable("id") int id){
         if(!educacionService.existsById(id))
             return new ResponseEntity(new Mensaje("no existe"), HttpStatus.BAD_REQUEST);
-        Educacion experiencia = educacionService.getOne(id).get();
-        return new ResponseEntity(experiencia, HttpStatus.OK);
+        Educacion educacion = educacionService.getOne(id).get();
+        return new ResponseEntity(educacion, HttpStatus.OK);
     } 
     
     @PostMapping("/create")
