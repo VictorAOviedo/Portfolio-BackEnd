@@ -16,13 +16,17 @@ public class Skills {
     private String nombreSkills;
     private String imagenSkills;
     private String porcentajeSkills;
+    private String colorPrimarioSkills;
+    private String colorSecundarioSkills;
 
     public Skills() {
     }
 
-    public Skills(String nombreSkills, String imagenSkills, String porcentajeSkills) {
+    public Skills(String nombreSkills, String imagenSkills, String porcentajeSkills, String colorPrimarioSkills, String colorSecundarioSkills) {
         this.nombreSkills = nombreSkills;
         this.imagenSkills = imagenSkills;
         this.porcentajeSkills = porcentajeSkills;
+        this.colorPrimarioSkills = colorPrimarioSkills;
+        this.colorSecundarioSkills = colorSecundarioSkills;
     }  
 }
