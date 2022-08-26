@@ -44,7 +44,7 @@ public class PersonaController {
     public ResponseEntity<?> create(@RequestBody DtoPersona dtoPersona){
         if(StringUtils.isBlank(dtoPersona.getNombre()))
             return new ResponseEntity(new Mensaje("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);
-        if(educacionService.existsByNombreEdu(dtoPersona.getNombre()))
+        if(personaService.existsByNombre(dtoPersona.getNombre()))
             return new ResponseEntity(new Mensaje("La persona ya existe"), HttpStatus.BAD_REQUEST);
         
         Persona persona = new Persona(dtoPersona.getNombre(), dtoPersona.getApellido(), dtoPersona.getTitulo(), dtoPersona.getDescripcion(), dtoPersona.getImagen());
