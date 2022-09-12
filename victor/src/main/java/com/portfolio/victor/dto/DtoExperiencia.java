@@ -12,13 +12,16 @@ public class DtoExperiencia {
     private String descripcionExp;
     @NotBlank
     private String fechaExp;
+    @NotBlank
+    private String imagenExp;
 
     public DtoExperiencia() {
     }
 
-    public DtoExperiencia(String nombreExp, String descripcionExp, String fechaExp) {
+    public DtoExperiencia(String nombreExp, String descripcionExp, String fechaExp, String imagenExp) {
         this.nombreExp = nombreExp;
         this.descripcionExp = descripcionExp;
         this.fechaExp = fechaExp;
+        this.imagenExp = imagenExp;
     }  
 }

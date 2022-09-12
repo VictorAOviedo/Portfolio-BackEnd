@@ -16,13 +16,15 @@ public class Experiencia {
     private String nombreExp;
     private String descripcionExp;
     private String fechaExp;
+    private String imagenExp;
 
     public Experiencia() {
     }
 
-    public Experiencia(String nombreExp, String descripcionExp, String fechaExp) {
+    public Experiencia(String nombreExp, String descripcionExp, String fechaExp, String imagenExp) {
         this.nombreExp = nombreExp;
         this.descripcionExp = descripcionExp;
         this.fechaExp = fechaExp;
+        this.imagenExp = imagenExp;
     }   
 }
